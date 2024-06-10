@@ -4,6 +4,11 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="alien" class="org.telusko.Alien">
+<bean id="alien1" class="org.telusko.Alien" scope="prototype">
+    <property name="age" value="21"/>
 </bean>
+
+    <bean id="alien2" class="org.telusko.Alien" scope="prototype">
+        <property name="age" value="22"/>
+    </bean>
 </beans>
