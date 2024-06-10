@@ -6,9 +6,16 @@
 
 <bean id="alien1" class="org.telusko.Alien" scope="prototype">
     <property name="age" value="21"/>
+    <property name="laptop" ref="laptop1"/>
 </bean>
 
     <bean id="alien2" class="org.telusko.Alien" scope="prototype">
         <property name="age" value="22"/>
+        <property name="laptop" ref="laptop2"/>
+    </bean>
+    <bean id="laptop1" class="org.telusko.Laptop" scope="prototype">
+    </bean>
+
+    <bean id="laptop2" class="org.telusko.Laptop" scope="prototype">
     </bean>
 </beans>
